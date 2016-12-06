@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'VIPERS-Router_Example' do
+  pod 'VIPERS-Router', :path => '../'
+
+  target 'VIPERS-Router_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
