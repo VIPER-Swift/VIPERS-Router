@@ -3,9 +3,9 @@ use_frameworks!
 target 'VIPERS-Router_Example' do
 
   pod 'VIPERS-Router', :path => '../'
-  pod 'VIPERS-Router-Protocol', :path => '../../VIPERS-Router-Protocol'
-  pod 'VIPERS-Converter-Protocol', :path => '../../VIPERS-Converter-Protocol'
-  pod 'VIPERS-Converter', :path => '../../VIPERS-Converter'
+  #pod 'VIPERS-Router-Protocol', :path => '../../VIPERS-Router-Protocol'
+  #pod 'VIPERS-Converter-Protocol', :path => '../../VIPERS-Converter-Protocol'
+  #pod 'VIPERS-Converter', :path => '../../VIPERS-Converter'
 
 
 end
@@ -14,8 +14,8 @@ end
 target 'VIPERS-Router_Tests' do
     
     pod 'VIPERS-Router', :path => '../'
-    pod 'VIPERS-Router-Protocol', :path => '../../VIPERS-Router-Protocol'
-    pod 'VIPERS-Converter-Protocol', :path => '../../VIPERS-Converter-Protocol'
-    pod 'VIPERS-Converter', :path => '../../VIPERS-Converter'
+    #pod 'VIPERS-Router-Protocol', :path => '../../VIPERS-Router-Protocol'
+    #pod 'VIPERS-Converter-Protocol', :path => '../../VIPERS-Converter-Protocol'
+    #pod 'VIPERS-Converter', :path => '../../VIPERS-Converter'
     
 end

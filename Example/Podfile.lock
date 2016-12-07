@@ -1,6 +1,4 @@
 PODS:
-  - VIPERS-Converter (0.1.0):
-    - VIPERS-Converter-Protocol
   - VIPERS-Converter-Protocol (0.1.0)
   - VIPERS-Router (0.1.0):
     - VIPERS-Converter-Protocol
@@ -9,27 +7,17 @@ PODS:
     - VIPERS-Converter-Protocol
 
 DEPENDENCIES:
-  - VIPERS-Converter (from `../../VIPERS-Converter`)
-  - VIPERS-Converter-Protocol (from `../../VIPERS-Converter-Protocol`)
   - VIPERS-Router (from `../`)
-  - VIPERS-Router-Protocol (from `../../VIPERS-Router-Protocol`)
 
 EXTERNAL SOURCES:
-  VIPERS-Converter:
-    :path: "../../VIPERS-Converter"
-  VIPERS-Converter-Protocol:
-    :path: "../../VIPERS-Converter-Protocol"
   VIPERS-Router:
     :path: "../"
-  VIPERS-Router-Protocol:
-    :path: "../../VIPERS-Router-Protocol"
 
 SPEC CHECKSUMS:
-  VIPERS-Converter: 006a908b8f9b19a007032e967e857c66c4787c23
   VIPERS-Converter-Protocol: 1dfd4f62952e487187b9b7b805ac5eff6a06758e
-  VIPERS-Router: e716b405619698dbf5dddc48c7cbacbaa02386eb
-  VIPERS-Router-Protocol: 99eeb05700928af51b4ebb27fdd0c4eddb008631
+  VIPERS-Router: a4afb6f3f1db5e103eecc952adf4e9cb1cf2bd27
+  VIPERS-Router-Protocol: d4d0d6c54bc65e2e4c90092efacf99f7a269b6f2
 
-PODFILE CHECKSUM: 01fc35b896c7664d8001bd643d92dea8d8c4f6df
+PODFILE CHECKSUM: 8c8113ceaa84cff78e9464f497d355cb6dbc8d62
 
 COCOAPODS: 1.1.0.rc.2
