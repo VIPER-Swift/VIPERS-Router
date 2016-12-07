@@ -16,10 +16,10 @@ class TestAddingRoutingConverterTests: XCTestCase {
         let router = Router()
         
         let routeConverter = StringRouteDefinitionConverter()
-        router.addRouteDefinitionConverter(routeConverter)
+        router.add(routeDefinitionConverter:routeConverter)
         
         do {
-            try router.addRouteDefinition("/this/is/a/nice/route/definition")
+            try router.add(routeDefinition:"/this/is/a/nice/route/definition")
         } catch _ {
             XCTFail("We added a string route definition converter, but we can't add a string as route definition without a failure ")
         }

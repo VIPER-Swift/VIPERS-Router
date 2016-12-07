@@ -8,7 +8,6 @@
 
 import UIKit
 import VIPERS_Converter_Protocol
-import VIPERS_Converter
 import VIPERS_Router_Protocol
 import VIPERS_Router
 
@@ -27,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         do {
             
-            try router.addRouteDefinition(routeDefinition) { ( route : DefaultRoute ) in
+            try router.add(routeDefinition: routeDefinition) { ( route : DefaultRoute ) in
                 print("call \(route.identifier)")
             }
             

@@ -26,7 +26,7 @@ open class Router : RouterProtocol{
     fileprivate var routeDefinitionConverters = [ConverterProtocol]()
     fileprivate var routingHandlers = [String : Any]()
     
-    open func addRouteDefinition<T : RouteDefinitionProtocol,R : RouteDescriptionProtocol>(_ routeDefinition : T, handler: @escaping (R) -> Void) throws{
+    open func add<T : RouteDefinitionProtocol,R : RouteDescriptionProtocol>(routeDefinition : T, handler: @escaping (R) -> Void) throws{
         
         let uuid = try self.addDefinition(routeDefinition)
         
@@ -36,14 +36,14 @@ open class Router : RouterProtocol{
         
     }
     
-    open func addRouteDefinition<T : RouteDefinitionProtocol>(_ routeDefinition : T) throws{
+    open func add<T : RouteDefinitionProtocol>( routeDefinition : T) throws{
         //if route definition is a valid converter add it, convert it to a converter else
         try self.addDefinition(routeDefinition)
     }
     
     
-    open func addRouteDefinitionConverter<T : RouteDefinitionConverterProtocol> (_ converter : T) {
-        self.routeDefinitionConverters.append(converter)
+    open func add<T : RouteDefinitionConverterProtocol>( routeDefinitionConverter : T) {
+        self.routeDefinitionConverters.append(routeDefinitionConverter)
     }
     
     

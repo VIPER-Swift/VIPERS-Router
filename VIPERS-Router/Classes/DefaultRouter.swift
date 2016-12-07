@@ -13,7 +13,7 @@ public class DefaultRouter : Router{
     public override init(){
         super.init()
         let routeDefinitionConverter = StringRouteDefinitionConverter()
-        self.addRouteDefinitionConverter(routeDefinitionConverter)
+        self.add(routeDefinitionConverter:routeDefinitionConverter)
     }
 
 }

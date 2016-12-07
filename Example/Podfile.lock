@@ -8,16 +8,19 @@ PODS:
 
 DEPENDENCIES:
   - VIPERS-Router (from `../`)
+  - VIPERS-Router-Protocol (from `../../VIPERS-Router-Protocol`)
 
 EXTERNAL SOURCES:
   VIPERS-Router:
     :path: "../"
+  VIPERS-Router-Protocol:
+    :path: "../../VIPERS-Router-Protocol"
 
 SPEC CHECKSUMS:
   VIPERS-Converter-Protocol: 1dfd4f62952e487187b9b7b805ac5eff6a06758e
   VIPERS-Router: a4afb6f3f1db5e103eecc952adf4e9cb1cf2bd27
   VIPERS-Router-Protocol: d4d0d6c54bc65e2e4c90092efacf99f7a269b6f2
 
-PODFILE CHECKSUM: 8c8113ceaa84cff78e9464f497d355cb6dbc8d62
+PODFILE CHECKSUM: 4f6dbf6f0121747072bf8f562187ebcf58e0784f
 
 COCOAPODS: 1.1.0.rc.2

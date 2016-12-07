@@ -17,7 +17,7 @@ class TestRoutingTests: XCTestCase {
         self.router = Router()
         
         let routeConverter = StringRouteDefinitionConverter()
-        self.router.addRouteDefinitionConverter(routeConverter)
+        self.router.add(routeDefinitionConverter:routeConverter)
     }
     
     func testGetRouteWithCorrectRoutable() {
@@ -26,7 +26,7 @@ class TestRoutingTests: XCTestCase {
     
             var didCall = false
             
-            try self.router.addRouteDefinition("/testRoute/:id") { ( route : DefaultRoute ) in
+            try self.router.add(routeDefinition:"/testRoute/:id") { ( route : DefaultRoute ) in
                 didCall = true
             }
             
@@ -48,12 +48,12 @@ class TestRoutingTests: XCTestCase {
             
             var didCall1 = false
             
-            try self.router.addRouteDefinition("/testRoute/:id") { ( route : DefaultRoute ) in
+            try self.router.add(routeDefinition:"/testRoute/:id") { ( route : DefaultRoute ) in
                 didCall1 = true
             }
             
             var didCall2 = false
-            try self.router.addRouteDefinition("/some/other/routable") { ( route : DefaultRoute ) in
+            try self.router.add(routeDefinition:"/some/other/routable") { ( route : DefaultRoute ) in
                 didCall2 = true
             }
             
@@ -78,7 +78,7 @@ class TestRoutingTests: XCTestCase {
             
             var didCall = false
             
-            try self.router.addRouteDefinition("/testRoute/:id") { ( route : DefaultRoute ) in
+            try self.router.add(routeDefinition:"/testRoute/:id") { ( route : DefaultRoute ) in
                 didCall = true
             }
             
@@ -100,7 +100,7 @@ class TestRoutingTests: XCTestCase {
             
             var didCall = false
             
-            try self.router.addRouteDefinition("/testRoute/:id") { ( route : DefaultRoute ) in
+            try self.router.add(routeDefinition:"/testRoute/:id") { ( route : DefaultRoute ) in
                 didCall = true
             }
             
@@ -120,7 +120,7 @@ class TestRoutingTests: XCTestCase {
         
         do {
             
-            try self.router.addRouteDefinition("/testRoute/:id") { ( route : DefaultRoute ) in
+            try self.router.add(routeDefinition:"/testRoute/:id") { ( route : DefaultRoute ) in
                 didCall = true
             }
             
